@@ -533,7 +533,7 @@ echo "... note that warnings here are expected and can be safely ignored ..."
     #
     echo "--- "
     echo "Setting FHIR Service Client Object ID"
-    fhirServiceClientObjectId=$(az ad sp show --id $fhirServiceClientId --query "objectId" --out tsv)
+    fhirServiceClientObjectId=$(az ad sp show --id $fhirServiceClientId --query "id" --out tsv)
     echo "FHIR Service Client Object ID = ["$fhirServiceClientObjectId"]"
 
      # Save the FHIR Service Client Application information to the Key Vault 
